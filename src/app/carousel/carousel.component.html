@@ -1,0 +1,18 @@
+
+<div class="card bg-light m-2">
+  <div class="card-image">
+    <div class="card-header text-white">Title</div>
+    <img src="../../assets/image.png">
+  </div>
+  <div class="card-body mx-auto text-center">
+    <div  class="card-title">
+      <h5>{{title[0]}}</h5>
+    </div>
+    <div  class="card-text">
+      <p>{{title[1]}}</p>
+    </div>
+    <a class="btn btn-sm" href="#" ng-click="count = count + 1" ng-init="count=0" role="button"(click)="onAlert(count)" >Read More</a>
+  </div>
+</div>
+
+<app-alert *ngIf="count==1"></app-alert>

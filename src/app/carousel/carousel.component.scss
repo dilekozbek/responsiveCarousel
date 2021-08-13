@@ -1,0 +1,19 @@
+$headercolor:#1b1b1b;
+$btnbgcolor:#01A9E4;
+$btncolor: #fff;
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.411);
+
+
+.card{
+  box-shadow: $box-shadow;
+}
+.card-header{
+  background-color: $headercolor;
+}
+.btn{
+  border: 1px solid $btnbgcolor;
+  &:hover{
+    background-color: $btnbgcolor;
+    color:$btncolor;
+  }
+}
